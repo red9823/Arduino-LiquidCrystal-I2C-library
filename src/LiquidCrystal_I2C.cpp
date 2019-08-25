@@ -222,7 +222,7 @@ void LiquidCrystal_I2C::send(uint8_t value, uint8_t mode) {
 void LiquidCrystal_I2C::write4bits(uint8_t value) {
 	expanderWrite(value);
 	pulseEnable(value);
-}
+}	
 
 void LiquidCrystal_I2C::expanderWrite(uint8_t _data){
 	Wire.beginTransmission(_addr);
